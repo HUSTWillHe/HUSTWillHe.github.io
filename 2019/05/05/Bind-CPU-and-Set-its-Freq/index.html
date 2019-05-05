@@ -96,25 +96,24 @@
 
 
 
-  <meta name="description" content="Technologyextern “C”如果在Cpp文件中需要调用C的代码，一般会出现一下的代码：1234567#ifdef _cplusplus    extern &quot;C&quot;&amp;#123;#endif// normal code#if def _cplusplus&amp;#125;#endif 首先_cplusplus是所有cpp文件都会内部定义的一个宏，表明当前文件是以cpp的方式进行编译的。而cpp与">
-<meta name="keywords" content="Daily,C,CPP">
+  <meta name="description" content="Share something that I discovered.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Daily190422">
-<meta property="og:url" content="http://yoursite.com/2019/04/22/Daily190422/index.html">
+<meta property="og:title" content="Bind CPU and Set its Freq">
+<meta property="og:url" content="http://yoursite.com/2019/05/05/Bind-CPU-and-Set-its-Freq/index.html">
 <meta property="og:site_name" content="Will He">
-<meta property="og:description" content="Technologyextern “C”如果在Cpp文件中需要调用C的代码，一般会出现一下的代码：1234567#ifdef _cplusplus    extern &quot;C&quot;&amp;#123;#endif// normal code#if def _cplusplus&amp;#125;#endif 首先_cplusplus是所有cpp文件都会内部定义的一个宏，表明当前文件是以cpp的方式进行编译的。而cpp与">
+<meta property="og:description" content="Share something that I discovered.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-23T03:09:02.388Z">
+<meta property="og:updated_time" content="2019-05-05T03:47:32.348Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Daily190422">
-<meta name="twitter:description" content="Technologyextern “C”如果在Cpp文件中需要调用C的代码，一般会出现一下的代码：1234567#ifdef _cplusplus    extern &quot;C&quot;&amp;#123;#endif// normal code#if def _cplusplus&amp;#125;#endif 首先_cplusplus是所有cpp文件都会内部定义的一个宏，表明当前文件是以cpp的方式进行编译的。而cpp与">
+<meta name="twitter:title" content="Bind CPU and Set its Freq">
+<meta name="twitter:description" content="Share something that I discovered.">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/22/Daily190422/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/05/Bind-CPU-and-Set-its-Freq/">
 
 
 
@@ -124,7 +123,7 @@
   };
 </script>
 
-  <title>Daily190422 | Will He</title>
+  <title>Bind CPU and Set its Freq | Will He</title>
   
 
 
@@ -310,7 +309,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/22/Daily190422/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/05/Bind-CPU-and-Set-its-Freq/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Will He">
@@ -327,7 +326,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Daily190422
+          <h1 class="post-title" itemprop="name headline">Bind CPU and Set its Freq
 
               
             
@@ -353,25 +352,9 @@
                 
               
 
-              <time title="创建时间：2019-04-22 16:34:16" itemprop="dateCreated datePublished" datetime="2019-04-22T16:34:16+08:00">2019-04-22</time>
+              <time title="创建时间：2019-05-05 11:47:32" itemprop="dateCreated datePublished" datetime="2019-05-05T11:47:32+08:00">2019-05-05</time>
             
 
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-23 11:09:02" itemprop="dateModified" datetime="2019-04-23T11:09:02+08:00">2019-04-23</time>
-              
             
           </span>
 
@@ -404,9 +387,7 @@
       
 
       
-        <h1 id="Technology"><a href="#Technology" class="headerlink" title="Technology"></a>Technology</h1><h2 id="extern-“C”"><a href="#extern-“C”" class="headerlink" title="extern “C”"></a>extern “C”</h2><p>如果在Cpp文件中需要调用C的代码，一般会出现一下的代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> _cplusplus</span></span><br><span class="line">    <span class="keyword">extern</span> <span class="string">"C"</span>&#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"><span class="comment">// normal code</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> def _cplusplus</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure></p>
-<p>首先_cplusplus是所有cpp文件都会内部定义的一个宏，表明当前文件是以cpp的方式进行编译的。<br>而cpp与c文件在编译的过程中对函数名的解析是不同的，例如：foo（int，int）在cpp中会被编译成foo_int_int<br>而在c中只是foo，也是因为这个特性，所cpp支持函数名的冲载。加了extern”C”则表示按照cpp的方式进行编译。</p>
-
+        
       
     </div>
 
@@ -427,16 +408,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Daily/" rel="tag"># Daily</a>
-          
-            <a href="/tags/C/" rel="tag"># C</a>
-          
-            <a href="/tags/CPP/" rel="tag"># CPP</a>
-          
-        </div>
-      
 
       
       
@@ -446,8 +417,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/21/Daily190421/" rel="next" title="Daily190421">
-                <i class="fa fa-chevron-left"></i> Daily190421
+              <a href="/2019/04/25/My-Plugins/" rel="next" title="My Plugins">
+                <i class="fa fa-chevron-left"></i> My Plugins
               </a>
             
           </div>
@@ -455,10 +426,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/25/My-Plugins/" rel="prev" title="My Plugins">
-                My Plugins <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -502,17 +469,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -630,23 +588,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Technology"><span class="nav-number">1.</span> <span class="nav-text">Technology</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#extern-“C”"><span class="nav-number">1.1.</span> <span class="nav-text">extern “C”</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
