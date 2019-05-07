@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Will He">
 <meta property="og:description" content="Summary全面总结在我地mac，windows pc，安卓手机上用到地各种插件，希望达到的效果是，今后换电脑可以迅速地搭建起一套熟悉地环境。   PluginsChrome PluginsTamperMonkey不同网站上脚本资源的合集，可以优化网站浏览。比较推荐的脚本有豆瓣资源下载大师，youtube download等。   ABP用于拦截广告   CrxMouse对于mac上使用鼠标操作">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-05T10:53:07.967Z">
+<meta property="og:updated_time" content="2019-05-07T05:23:14.781Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My Plugins">
 <meta name="twitter:description" content="Summary全面总结在我地mac，windows pc，安卓手机上用到地各种插件，希望达到的效果是，今后换电脑可以迅速地搭建起一套熟悉地环境。   PluginsChrome PluginsTamperMonkey不同网站上脚本资源的合集，可以优化网站浏览。比较推荐的脚本有豆瓣资源下载大师，youtube download等。   ABP用于拦截广告   CrxMouse对于mac上使用鼠标操作">
@@ -370,7 +370,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-05 18:53:07" itemprop="dateModified" datetime="2019-05-05T18:53:07+08:00">2019-05-05</time>
+                <time title="修改时间：2019-05-07 13:23:14" itemprop="dateModified" datetime="2019-05-07T13:23:14+08:00">2019-05-07</time>
               
             
           </span>
@@ -529,6 +529,7 @@
 <li>termux文件夹下创建系统文件夹软链接，实现与系统文件的交互<br>关于Termux相关内容可以另起一个新文章描述  <h3 id="Xposed"><a href="#Xposed" class="headerlink" title="Xposed"></a>Xposed</h3>又一安卓神器，在此框架下可以实现支付宝偷能量，微信修改运动步数等操作，需要手机ROOT  <h3 id="GitMe"><a href="#GitMe" class="headerlink" title="GitMe"></a>GitMe</h3>在手机上的GitHub第三方客户端  <h3 id="Google-Platform"><a href="#Google-Platform" class="headerlink" title="Google Platform"></a>Google Platform</h3>谷歌框架，安装后可以通过GooglePlay安装，管理一些国内应用市场上没有的应用。<br>例如Termux之类的。同时Google的语音助手在英文上也很强大  <h3 id="VPN"><a href="#VPN" class="headerlink" title="VPN"></a>VPN</h3>目前使用的是Cisco AnyConnect,之前使用过SS，另外Lantern也有安卓版本，没有试过是否好用  </li>
 </ul>
 <h1 id="Tricks"><a href="#Tricks" class="headerlink" title="Tricks"></a>Tricks</h1><h2 id="count-char-in-vim"><a href="#count-char-in-vim" class="headerlink" title="count char in vim"></a>count char in vim</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:%s/./&amp;/g  <span class="comment">#含义是所有的字符用自身替换</span></span><br></pre></td></tr></table></figure>
+<p>跳出vim还有另外一种计算文件字符数量，行数，单词数量的方法 wc<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat foobar.txt | wc -c</span><br></pre></td></tr></table></figure></p>
 <h2 id="jump-to-pair"><a href="#jump-to-pair" class="headerlink" title="jump to pair"></a>jump to pair</h2><p>快速跳转至括号的另一半 %  </p>
 <h2 id="VIM-中快速缩进"><a href="#VIM-中快速缩进" class="headerlink" title="VIM 中快速缩进"></a>VIM 中快速缩进</h2><p>在normal模式中使用>> 和 两个小于号 快速缩进，在virtual模式中，使用单个大于号小于号 快速缩进</p>
 <h2 id="正则表达式中变量的使用"><a href="#正则表达式中变量的使用" class="headerlink" title="正则表达式中变量的使用"></a>正则表达式中变量的使用</h2><p>查找部分(和)中间放变量名，在替换部分用\1 \2 \3替代。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:%s/&lt;C-\(.\)&gt;/Ctrl + \1/gci <span class="comment">#将类似于&lt;C-e&gt;替换成Ctrl + e</span></span><br></pre></td></tr></table></figure></p>
