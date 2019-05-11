@@ -669,7 +669,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-10 10:13:33" itemprop="dateModified" datetime="2019-05-10T10:13:33+08:00">2019-05-10</time>
+                <time title="修改时间：2019-05-11 18:05:23" itemprop="dateModified" datetime="2019-05-11T18:05:23+08:00">2019-05-11</time>
               
             
           </span>
@@ -796,7 +796,7 @@
 <li>leader + leader + . 重复上一次操作  </li>
 </ul>
 <h3 id="Markdown-Preview"><a href="#Markdown-Preview" class="headerlink" title="Markdown Preview"></a>Markdown Preview</h3><p>在spf13之外自己添加的一个bundle<br><a href="https://github.com/iamcco/markdown-preview.nvim" target="_blank" rel="noopener">GitHub:MarkdownPreview</a>  </p>
-<h2 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h2><h3 id="VSCODE-VIM"><a href="#VSCODE-VIM" class="headerlink" title="VSCODE VIM"></a>VSCODE VIM</h3><p>没有.vimrc可提供配置，但是在~/Library/Application\ Support/Code/User/settings.json 中可以添加设置内容<br>目前我添加的内容为：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"vim.easymotion"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"vim.leader"</span>: <span class="string">","</span>,</span><br><span class="line">    <span class="attr">"vim.insertModeKeyBindings"</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">"before"</span>: [<span class="string">"j"</span>, <span class="string">"j"</span>],</span><br><span class="line">        <span class="attr">"after"</span>: [<span class="string">"&lt;Esc&gt;"</span>]</span><br><span class="line">      &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"vim.normalModeKeyBindingsNonRecursive"</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">"before"</span>: [<span class="string">"&lt;leader&gt;"</span>, <span class="string">"d"</span>],</span><br><span class="line">        <span class="attr">"after"</span>: [<span class="string">"d"</span>, <span class="string">"d"</span>]</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">"before"</span>: [<span class="string">"&lt;C-n&gt;"</span>],</span><br><span class="line">        <span class="attr">"commands"</span>: [<span class="string">":nohl"</span>]</span><br><span class="line">      &#125;</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h2><h3 id="VSCODE-VIM"><a href="#VSCODE-VIM" class="headerlink" title="VSCODE VIM"></a>VSCODE VIM</h3><p>没有.vimrc可提供配置，但是在~/Library/Application\ Support/Code/User/settings.json 中可以添加设置内容<br>目前我添加的内容为：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"json不能有注释，所以这些只是文本之外的说明"</span></span><br><span class="line">  <span class="string">"vim.easymotion"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"使用EasyMotion 主要用法与shell中vim的EasyMotion相同"</span></span><br><span class="line">  <span class="string">"vim.sneak"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"快速跳转工具，使用方法s&lt;char&gt;&lt;char&gt;用于搜索之后第一个出现的&lt;char&gt;&lt;char&gt;"</span></span><br><span class="line">  <span class="string">"vim.incsearch"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"在搜索的时候，同时跳转"</span></span><br><span class="line">  <span class="string">"vim.useSystemClipboard"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"vim.useCtrlKeys"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"vim.hlsearch"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"搜索高亮"</span></span><br><span class="line">  <span class="string">"vim.insertModeKeyBindings"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"before"</span>: [<span class="string">"j"</span>, <span class="string">"j"</span>],</span><br><span class="line">      <span class="attr">"after"</span>: [<span class="string">"&lt;Esc&gt;"</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"jj替代esc"</span></span><br><span class="line">  <span class="string">"vim.normalModeKeyBindingsNonRecursive"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"before"</span>: [<span class="string">"&lt;leader&gt;"</span>, <span class="string">"d"</span>],</span><br><span class="line">      <span class="attr">"after"</span>: [<span class="string">"d"</span>, <span class="string">"d"</span>]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"before"</span>: [<span class="string">"&lt;C-n&gt;"</span>],</span><br><span class="line">      <span class="attr">"commands"</span>: [<span class="string">":nohl"</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">":nohl的含义是搜索之后如果移开搜索内容，则高亮消失"</span></span><br><span class="line">  <span class="string">"vim.leader"</span>: <span class="string">"&lt;space&gt;"</span>,</span><br><span class="line">  <span class="attr">"vim.handleKeys"</span>: &#123;</span><br><span class="line">    <span class="attr">"&lt;C-a&gt;"</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">"&lt;C-f&gt;"</span>: <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="string">"_command"</span>:<span class="string">"在vim中禁用c-a c-f使其为系统快捷键"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="ZSH"><a href="#ZSH" class="headerlink" title="ZSH"></a>ZSH</h2><ul>
 <li>oh-my-zsh<br><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">GitHub:oh-my-zsh</a><br>这个插件类似于spf13vim，是一个插件的集合，里面包好非常多实用的插件，但是默认只开启了git，安装完oh-my-zsh 之后只需在.zshrc中Plugins中添加想使用的插件，然后source一下即可。  <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">plugins=(</span><br><span class="line">  git zsh-autosuggestions  </span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 </li>
@@ -841,7 +841,43 @@
 <h1 id="Tricks"><a href="#Tricks" class="headerlink" title="Tricks"></a>Tricks</h1><h2 id="count-char-in-vim"><a href="#count-char-in-vim" class="headerlink" title="count char in vim"></a>count char in vim</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:%s/./&amp;/g  <span class="comment">#含义是所有的字符用自身替换</span></span><br></pre></td></tr></table></figure>
 <p>跳出vim还有另外一种计算文件字符数量，行数，单词数量的方法 wc<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat foobar.txt | wc -c</span><br></pre></td></tr></table></figure></p>
 <h2 id="jump-to-pair"><a href="#jump-to-pair" class="headerlink" title="jump to pair"></a>jump to pair</h2><p>快速跳转至括号的另一半 %  </p>
-<h2 id="VIM-中快速缩进"><a href="#VIM-中快速缩进" class="headerlink" title="VIM 中快速缩进"></a>VIM 中快速缩进</h2><p>在normal模式中使用>> 和 两个小于号 快速缩进，在virtual模式中，使用单个大于号小于号 快速缩进</p>
+<h2 id="VIM-中快速缩进"><a href="#VIM-中快速缩进" class="headerlink" title="VIM 中快速缩进"></a>VIM 中快速缩进</h2><p>在normal模式中使用>> 和 两个小于号 快速缩进，在virtual模式中，使用单个大于号小于号 快速缩进<br>另外vim中还可以用等于号快速格式化  </p>
+<h2 id="VIM中重复操作"><a href="#VIM中重复操作" class="headerlink" title="VIM中重复操作"></a>VIM中重复操作</h2><table>
+<thead>
+<tr>
+<th>重复类型</th>
+<th>重复操作符</th>
+<th>回退操作符</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文本改变重复</td>
+<td>.</td>
+<td>u</td>
+</tr>
+<tr>
+<td>行内查找重复</td>
+<td>,</td>
+<td>;</td>
+</tr>
+<tr>
+<td>全文查找重复</td>
+<td>n</td>
+<td>N</td>
+</tr>
+<tr>
+<td>文本替换重复</td>
+<td>&amp;</td>
+<td>u</td>
+</tr>
+<tr>
+<td>宏重复</td>
+<td>@[寄存器]</td>
+<td>u</td>
+</tr>
+</tbody>
+</table>
 <h2 id="正则表达式中变量的使用"><a href="#正则表达式中变量的使用" class="headerlink" title="正则表达式中变量的使用"></a>正则表达式中变量的使用</h2><p>查找部分(和)中间放变量名，在替换部分用\1 \2 \3替代。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:%s/&lt;C-\(.\)&gt;/Ctrl + \1/gci <span class="comment">#将类似于&lt;C-e&gt;替换成Ctrl + e</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="Markdown中箭头使用方法"><a href="#Markdown中箭头使用方法" class="headerlink" title="Markdown中箭头使用方法"></a>Markdown中箭头使用方法</h2><p>注：需要去除右边符号中的空格<br>| 箭头效果 | 对应markdown符号|<br>| —— | —— |<br>| &uarr; | &amp; uarr;|<br>| &darr; | &amp; darr;|<br>| &larr; | &amp; larr;|<br>| &rarr; | &amp; rarr;|<br>| &harr; | &amp; harr;|<br>| &varr; | &amp; varr;|<br>| &lArr; | &amp; lArr;|<br>| &rArr; | &amp; rArr;|  </p>
 
