@@ -96,23 +96,25 @@
 
 
 
-  <meta name="description" content="Share something that I discovered.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Will He">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="[TOC]约定:命令行语法中:“[]”中的内容表示可选参数;“&amp;lt;&amp;gt;”中的内容表示必选参数;“{}”中用“｜”分隔开的内容表示选择范围；“…”表示多项相同参数。命令的测试环境为Ubuntu 16.04.6 LTS   一、基础命令1. 文件及目录操作cd作用:切换目录语法:1cd &amp;lt;dirName&amp;gt; 常见用法：1234567cd .. #切换到上一级目录cd ../.. #切">
+<meta name="keywords" content="ShellScript,Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux Basic Command">
+<meta property="og:url" content="http://yoursite.com/2020/02/20/Linux-Basic-Command/index.html">
 <meta property="og:site_name" content="Will He">
-<meta property="og:description" content="Share something that I discovered.">
+<meta property="og:description" content="[TOC]约定:命令行语法中:“[]”中的内容表示可选参数;“&amp;lt;&amp;gt;”中的内容表示必选参数;“{}”中用“｜”分隔开的内容表示选择范围；“…”表示多项相同参数。命令的测试环境为Ubuntu 16.04.6 LTS   一、基础命令1. 文件及目录操作cd作用:切换目录语法:1cd &amp;lt;dirName&amp;gt; 常见用法：1234567cd .. #切换到上一级目录cd ../.. #切">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-02-20T12:42:18.254Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Will He">
-<meta name="twitter:description" content="Share something that I discovered.">
+<meta name="twitter:title" content="Linux Basic Command">
+<meta name="twitter:description" content="[TOC]约定:命令行语法中:“[]”中的内容表示可选参数;“&amp;lt;&amp;gt;”中的内容表示必选参数;“{}”中用“｜”分隔开的内容表示选择范围；“…”表示多项相同参数。命令的测试环境为Ubuntu 16.04.6 LTS   一、基础命令1. 文件及目录操作cd作用:切换目录语法:1cd &amp;lt;dirName&amp;gt; 常见用法：1234567cd .. #切换到上一级目录cd ../.. #切">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2020/02/20/Linux-Basic-Command/">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>Will He</title>
+  <title>Linux Basic Command | Will He</title>
   
 
 
@@ -170,8 +172,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -213,7 +214,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -292,9 +293,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -326,10 +327,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/02/20/Linux-Basic-Command/" class="post-title-link" itemprop="url">Linux Basic Command</a>
+          <h1 class="post-title" itemprop="name headline">Linux Basic Command
+
               
             
           </h1>
@@ -393,9 +392,7 @@
       
 
       
-        
-          
-            <p>[TOC]<br><em>约定:</em><br><em>命令行语法中:“[]”中的内容表示可选参数;“&lt;&gt;”中的内容表示必选参数;“{}”中用“｜”分隔开的内容表示选择范围；“…”表示多项相同参数。</em><br><em>命令的测试环境为Ubuntu 16.04.6 LTS</em>  </p>
+        <p>[TOC]<br><em>约定:</em><br><em>命令行语法中:“[]”中的内容表示可选参数;“&lt;&gt;”中的内容表示必选参数;“{}”中用“｜”分隔开的内容表示选择范围；“…”表示多项相同参数。</em><br><em>命令的测试环境为Ubuntu 16.04.6 LTS</em>  </p>
 <h1 id="一、基础命令"><a href="#一、基础命令" class="headerlink" title="一、基础命令"></a>一、基础命令</h1><h2 id="1-文件及目录操作"><a href="#1-文件及目录操作" class="headerlink" title="1. 文件及目录操作"></a>1. 文件及目录操作</h2><h3 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h3><p><strong>作用:</strong><br>切换目录<br><strong>语法:</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> &lt;dirName&gt;</span><br></pre></td></tr></table></figure></p>
 <p><strong>常见用法：</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> .. <span class="comment">#切换到上一级目录</span></span><br><span class="line"><span class="built_in">cd</span> ../.. <span class="comment">#切换到上上级目录</span></span><br><span class="line"><span class="built_in">cd</span> ... <span class="comment">#oh-my-zsh中的用法，切换到上上级目录</span></span><br><span class="line"><span class="built_in">cd</span> ~ <span class="comment">#切换到用户主目录</span></span><br><span class="line"><span class="built_in">cd</span> / <span class="comment">#切换到系统根目录</span></span><br><span class="line"><span class="built_in">cd</span> - <span class="comment">#相当于cd $OLDPWD,返回跳转至当前目录的目录</span></span><br><span class="line"><span class="built_in">cd</span> <span class="comment">#与"cd ~"作用相同，切换到用户主目录</span></span><br></pre></td></tr></table></figure></p>
 <p>由于分隔上下级目录的斜杠’/‘有多个不会对结果有影响，所以写脚本是涉及路径名文件名倾向于向路径名后面和文件名前面加’/‘。  </p>
@@ -671,8 +668,6 @@
 <p><strong>常见用法：</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sh run.sh <span class="comment">#通过这种方式或者使用路径加脚本名方式执行一个脚本会重新建立一个子shell，在子shell里面执行脚本中的语句，该子shell继承父shell的环境变量，但子shell新建的，改变的变量不会返回父shell</span></span><br><span class="line"><span class="built_in">source</span> environment.sh <span class="comment">#这个命令只是简单地抽取脚本中的语句，依次在shell中执行，没有建立新的shell。脚本里面所有新建、改变变量的语句都会保存在当前shell里面</span></span><br><span class="line">. newJob.env <span class="comment">#作用同上</span></span><br></pre></td></tr></table></figure></p>
 <hr>
 
-          
-        
       
     </div>
 
@@ -693,300 +688,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/31/neo-vim-preference/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Will He">
-      <meta itemprop="description" content="Share something that I discovered.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will He">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/10/31/neo-vim-preference/" class="post-title-link" itemprop="url">neo vim preference</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-10-31 11:06:15 / 修改时间：11:12:28" itemprop="dateCreated datePublished" datetime="2019-10-31T11:06:15+08:00">2019-10-31</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/ShellScript/" rel="tag"># ShellScript</a>
           
-            
-            
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
           
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Brief"><a href="#Brief" class="headerlink" title="Brief"></a>Brief</h1><p>vim解决了长时间文本输入环境下不断需要切换键盘鼠标的问题，让人们更专注于对输入内容的思考。但是上世纪九十年代的框架维护已经非常费力。于是一个巴西的大佬fork出了neovim。本文将介绍作者在neovim上的探索。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/07/Use-SNPE-to-Invoke-DSP-on-Qualcomm-Platform/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Will He">
-      <meta itemprop="description" content="Share something that I discovered.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will He">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/07/Use-SNPE-to-Invoke-DSP-on-Qualcomm-Platform/" class="post-title-link" itemprop="url">Use SNPE to Invoke DSP on Qualcomm Platform</a>
-              
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2019/10/31/neo-vim-preference/" rel="next" title="neo vim preference">
+                <i class="fa fa-chevron-left"></i> neo vim preference
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-05-07 21:45:24 / 修改时间：21:48:55" itemprop="dateCreated datePublished" datetime="2019-05-07T21:45:24+08:00">2019-05-07</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>SNPE是高通提供的在高通某些平台下加速神经网络模型的SDK，贵司的megface实现了不改变接口对其兼容。本文介绍了如何在megface的框架下使用SNPE调用dsp.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -996,1312 +729,15 @@
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/05/Bind-CPU-and-Set-its-Freq/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Will He">
-      <meta itemprop="description" content="Share something that I discovered.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will He">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/05/Bind-CPU-and-Set-its-Freq/" class="post-title-link" itemprop="url">Bind CPU and Set its Freq</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-05-05 11:47:32" itemprop="dateCreated datePublished" datetime="2019-05-05T11:47:32+08:00">2019-05-05</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-07 21:44:20" itemprop="dateModified" datetime="2019-05-07T21:44:20+08:00">2019-05-07</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>这篇文章旨在梳理笔者在某个安卓项目中使用到的对绑定核心，限制核心频率，并使用Systrace判断是否绑核成功。  </p>
-<h1 id="绑定CPU核心"><a href="#绑定CPU核心" class="headerlink" title="绑定CPU核心"></a>绑定CPU核心</h1><h1 id="设定核心频率"><a href="#设定核心频率" class="headerlink" title="设定核心频率"></a>设定核心频率</h1><h1 id="使用SysTrace观察CPU运行情况"><a href="#使用SysTrace观察CPU运行情况" class="headerlink" title="使用SysTrace观察CPU运行情况"></a>使用SysTrace观察CPU运行情况</h1>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/25/My-Plugins/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Will He">
-      <meta itemprop="description" content="Share something that I discovered.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will He">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/25/My-Plugins/" class="post-title-link" itemprop="url">My Plugins</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-25 13:17:51" itemprop="dateCreated datePublished" datetime="2019-04-25T13:17:51+08:00">2019-04-25</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-06-22 15:18:46" itemprop="dateModified" datetime="2019-06-22T15:18:46+08:00">2019-06-22</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>全面总结在我地mac，windows pc，安卓手机上用到地各种插件，希望达到的效果是，今后换电脑可以迅速地搭建起一套熟悉地环境。  </p>
-<h1 id="Plugins"><a href="#Plugins" class="headerlink" title="Plugins"></a>Plugins</h1><h2 id="Chrome-Plugins"><a href="#Chrome-Plugins" class="headerlink" title="Chrome Plugins"></a>Chrome Plugins</h2><h3 id="TamperMonkey"><a href="#TamperMonkey" class="headerlink" title="TamperMonkey"></a>TamperMonkey</h3><p>不同网站上脚本资源的合集，可以优化网站浏览。比较推荐的脚本有豆瓣资源下载大师，youtube download等。  </p>
-<h3 id="ABP"><a href="#ABP" class="headerlink" title="ABP"></a>ABP</h3><p>用于拦截广告  </p>
-<h3 id="Vimium"><a href="#Vimium" class="headerlink" title="Vimium"></a>Vimium</h3><p>一款在chorme上实现vim操作的插件,与下面的CrxMouse设计逻辑完全相反，这个是将所有操作尽量在键盘上完成  </p>
-<ul>
-<li>上下左右:k j h l d 下翻半页 u 上翻半页 gg 至顶 G 至底</li>
-<li>新建、关闭标签页：x X t ctrl+t ctrl+w cmd+shift+t 打开刚关闭的标签页</li>
-<li>跳转网页链接：f + 黄色框提示</li>
-<li>切换标签页：J K T搜索 Ctrl+Tab Cmd+1、2、3</li>
-<li>前进，后退 H L</li>
-<li>进入可视模式: v选中之后按y复制，V选中一行</li>
-<li>常用搜索：<ul>
-<li>O o 打开Vomnibar 搜索历史、标签页等</li>
-<li>T 打开标签页</li>
-<li>B b 使用默认搜索引擎</li>
-</ul>
-</li>
-<li><p>使用Vomnibar 使用搜索引擎 </p>
-<ul>
-<li>操作方法：先使用o打开Vomnibar 在渐入佳境关键字加空格进入搜索引擎，比如g 空格 华中科技大学。</li>
-<li>添加搜索引擎：手动添加了百度和知乎<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b: https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=baidu&amp;wd=%s Baidu </span><br><span class="line">zh: https://www.zhihu.com/search?type=content&amp;q=%s Zhihu</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>Tricky:</p>
-<ul>
-<li>gi 跳转至输入框 使用tab跳转各个输入框 使用esc跳出输入框</li>
-<li>cmd + l 跳转至输入框</li>
-<li>如果焦点集中在了输入框中怎么办：按下ESC跳出输入框</li>
-<li>如果焦点集中在地址栏怎么办：先按下Tab跳转至输入框，然后在Esc跳出输入框</li>
-<li>i输入模式的作用非常小，主要是使得Vimium快捷键失效，这样可以使用chrome自带的与vimimu冲突的快捷键  </li>
-</ul>
-</li>
-</ul>
-<h3 id="CrxMouse"><a href="#CrxMouse" class="headerlink" title="CrxMouse"></a>CrxMouse</h3><p>对于mac上使用鼠标操作进行了优化  </p>
-<ul>
-<li>右键在网页上划动  <ul>
-<li>左：向前  </li>
-<li>右：向后  </li>
-<li>上：鼠标上滚  </li>
-<li>下：鼠标下滚  </li>
-<li>左下：到底  </li>
-<li>左上：到顶  </li>
-<li>etc  </li>
-</ul>
-</li>
-<li>左键拖动文字  <ul>
-<li>向左拖动谷歌搜索文字  </li>
-<li>向右拖动百度搜索文字</li>
-</ul>
-</li>
-<li>左键拖动链接  <ul>
-<li>向左或向右拖动在新的标签栏打开  </li>
-</ul>
-</li>
-<li>左键拖动图片  <ul>
-<li>向左或者向右：在新的标签栏中打开图片  </li>
-<li>向下保存图片  <h3 id="Octotree"><a href="#Octotree" class="headerlink" title="Octotree"></a>Octotree</h3>用于侧边栏中显示github中的目录  <h3 id="OneTab"><a href="#OneTab" class="headerlink" title="OneTab"></a>OneTab</h3>将暂时不用的相关标签页集中收纳  <h3 id="Downie-3"><a href="#Downie-3" class="headerlink" title="Downie 3"></a>Downie 3</h3>配合Downie客户端使用，自动下载网页链接中的资源文件  <h3 id="sourcegraph"><a href="#sourcegraph" class="headerlink" title="sourcegraph"></a>sourcegraph</h3>像IDE一样在github中查看代码，跳转  </li>
-</ul>
-</li>
-</ul>
-<h2 id="VIM"><a href="#VIM" class="headerlink" title="VIM"></a>VIM</h2><h3 id="spf13vim"><a href="#spf13vim" class="headerlink" title="spf13vim"></a>spf13vim</h3><p><a href="https://github.com/spf13/spf13-vim" target="_blank" rel="noopener">GitHub:spf13-vim</a><br>这是一个大神vim的插件集合，其中包含了众多插件，这里介绍几个我使用频率较高的插件。  </p>
-<ul>
-<li>Vundle<br>用于管理插件的插件,大小写敏感  <ul>
-<li>:BundleInstall 在vim中执行命令以安装插件  </li>
-<li>:BundleUpdate 根据.vimrc.bundle中bundle后的内容删除插件  </li>
-<li>:BundleClean 删除已经卸载掉的插件包  </li>
-<li>:BundleList 插件列表  </li>
-</ul>
-</li>
-<li>NerdTree<br>用于打开文件列表  <ul>
-<li>Ctrl + E打开左侧列表栏  </li>
-<li>j,k上下切换  </li>
-<li>o 或者双击 打开文件夹或者文件  </li>
-<li>go 在已有窗口打开文件，但不跳转之  </li>
-<li>t 在新tab中打开</li>
-<li>? 显示帮助  </li>
-<li>gT 跳转至打开的前一个Tab  </li>
-<li>gt 跳转至打开的后一个Tab  </li>
-<li>:tabc 关闭当前tab页  </li>
-<li>:tabo 关闭之外的tab页  </li>
-<li>:tabs 显示所有打开的tab页  </li>
-<li>:tabp 前一个tab页  </li>
-<li>:tabn 下一个tab页  </li>
-</ul>
-</li>
-<li>NerdCommander  <ul>
-<li>leader + cc 注释  </li>
-<li>leader + cu 取消注释  </li>
-<li>leader + c space 注释与取消之间切换  </li>
-</ul>
-</li>
-<li>ctrlp<br>文件模糊搜索  <ul>
-<li>Ctrl + p 模糊搜索当前文件夹下及其子目录文件  </li>
-<li>搜索完成后  Ctrl + j  Ctrl + k 进行上下选择  </li>
-<li>选中文件后  Ctrl + x 水平分屏显示  Ctrl + v 垂直分屏显示  Ctrl + t 新tab中打开  </li>
-</ul>
-</li>
-<li>neosnippet<br>自动补全工具 自动补全语法位于.vim/bundle/neosnippet-snippet/neosnippet中  <ul>
-<li>关键字输入后会有匹配列表，使用tab键选择匹配项  </li>
-<li>选中需要的匹配之后  Ctrl + k 将匹配项应用到代码中  </li>
-</ul>
-</li>
-<li><p>undo tree<br>可视化地显示撤销操作  </p>
-<ul>
-<li>使用 leader + u打开undotree窗口  </li>
-</ul>
-</li>
-<li><p>surround<br>给一段文字加上括号  </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># *表示光标所在位置</span></span><br><span class="line">Old text                  Command     New text ~</span><br><span class="line"> <span class="string">"Hello *world!"</span>           ds<span class="string">"         Hello world!</span></span><br><span class="line"><span class="string"> [123+4*56]/2              cs])        (123+456)/2</span></span><br><span class="line"><span class="string"> "</span>Look ma, I<span class="string">'m *HTML!"     cs"&lt;q&gt;      &lt;q&gt;Look ma, I'</span>m HTML!&lt;/q&gt;</span><br><span class="line"> <span class="keyword">if</span> *x&gt;3 &#123;                 ysW(        <span class="keyword">if</span> ( x&gt;3 ) &#123;</span><br><span class="line"> my <span class="variable">$str</span> = *whee!;         vlllls<span class="string">'     my $str = '</span>whee!<span class="string">';</span></span><br><span class="line"><span class="string"> &lt;div&gt;Yo!*&lt;/div&gt;           dst         Yo!</span></span><br><span class="line"><span class="string"> &lt;div&gt;Yo!*&lt;/div&gt;           cst&lt;p&gt;      &lt;p&gt;Yo!&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="EasyMotion"><a href="#EasyMotion" class="headerlink" title="EasyMotion"></a>EasyMotion</h3><p>强大的跳转功能  </p>
-<ul>
-<li>leader + leader + w 向后跳转，助记word， 此操作之后会有若干个字母高亮，选择字母跳转到相关位置  </li>
-<li>leader + leader + b 向前跳转，助记back  </li>
-<li>leader + leader + s f于F的加强版，不限行号，此操作后输入一个想跳转的字符，则跳转至该处。  </li>
-<li>leader + leader + j,k 行级跳转  </li>
-<li>leader + leader + h,l 行内跳转  </li>
-<li>leader + leader + . 重复上一次操作  </li>
-</ul>
-<h3 id="Markdown-Preview"><a href="#Markdown-Preview" class="headerlink" title="Markdown Preview"></a>Markdown Preview</h3><p>在spf13之外自己添加的一个bundle<br><a href="https://github.com/iamcco/markdown-preview.nvim" target="_blank" rel="noopener">GitHub:MarkdownPreview</a>  </p>
-<h2 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h2><h3 id="VSCODE-VIM"><a href="#VSCODE-VIM" class="headerlink" title="VSCODE VIM"></a>VSCODE VIM</h3><p>没有.vimrc可提供配置，但是在~/Library/Application\ Support/Code/User/settings.json 中可以添加设置内容<br>目前我添加的内容为：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"json不能有注释，所以这些只是文本之外的说明"</span></span><br><span class="line">  <span class="string">"vim.easymotion"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"使用EasyMotion 主要用法与shell中vim的EasyMotion相同"</span></span><br><span class="line">  <span class="string">"vim.sneak"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"快速跳转工具，使用方法s&lt;char&gt;&lt;char&gt;用于搜索之后第一个出现的&lt;char&gt;&lt;char&gt;"</span></span><br><span class="line">  <span class="string">"vim.incsearch"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"在搜索的时候，同时跳转"</span></span><br><span class="line">  <span class="string">"vim.useSystemClipboard"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"vim.useCtrlKeys"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"vim.hlsearch"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"搜索高亮"</span></span><br><span class="line">  <span class="string">"vim.insertModeKeyBindings"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"before"</span>: [<span class="string">"j"</span>, <span class="string">"j"</span>],</span><br><span class="line">      <span class="attr">"after"</span>: [<span class="string">"&lt;Esc&gt;"</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">"jj替代esc"</span></span><br><span class="line">  <span class="string">"vim.normalModeKeyBindingsNonRecursive"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"before"</span>: [<span class="string">"&lt;leader&gt;"</span>, <span class="string">"d"</span>],</span><br><span class="line">      <span class="attr">"after"</span>: [<span class="string">"d"</span>, <span class="string">"d"</span>]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"before"</span>: [<span class="string">"&lt;C-n&gt;"</span>],</span><br><span class="line">      <span class="attr">"commands"</span>: [<span class="string">":nohl"</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"_command"</span>:<span class="string">":nohl的含义是搜索之后如果移开搜索内容，则高亮消失"</span></span><br><span class="line">  <span class="string">"vim.leader"</span>: <span class="string">"&lt;space&gt;"</span>,</span><br><span class="line">  <span class="attr">"vim.handleKeys"</span>: &#123;</span><br><span class="line">    <span class="attr">"&lt;C-a&gt;"</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">"&lt;C-f&gt;"</span>: <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="string">"_command"</span>:<span class="string">"在vim中禁用c-a c-f使其为系统快捷键"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="ZSH"><a href="#ZSH" class="headerlink" title="ZSH"></a>ZSH</h2><ul>
-<li>oh-my-zsh<br><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">GitHub:oh-my-zsh</a><br>这个插件类似于spf13vim，是一个插件的集合，里面包好非常多实用的插件，但是默认只开启了git，安装完oh-my-zsh 之后只需在.zshrc中Plugins中添加想使用的插件，然后source一下即可。  <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">plugins=(</span><br><span class="line">  git zsh-autosuggestions  </span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="ydict"><a href="#ydict" class="headerlink" title="ydict"></a>ydict</h2><p><a href="https://github.com/TimothyYe/ydictza" target="_blank" rel="noopener">GitHub:ydict</a><br>shell版本有道词典，使用ydict hello即可  </p>
-<h2 id="The-Fuck"><a href="#The-Fuck" class="headerlink" title="The Fuck"></a>The Fuck</h2><p>纠正之前错误的命令<br><a href="https://github.com/nvbn/thefuck" target="_blank" rel="noopener">GitHub:TheFuck</a></p>
-<h2 id="autojump"><a href="#autojump" class="headerlink" title="autojump"></a>autojump</h2><p>使用j加模糊地址搜索快速跳转至常用地址<br><a href="https://github.com/wting/autojump" target="_blank" rel="noopener">GitHub:AutoJump</a></p>
-<h2 id="zsh-syntax-highting"><a href="#zsh-syntax-highting" class="headerlink" title="zsh-syntax-highting"></a>zsh-syntax-highting</h2><p>将fish上的输入正误判断移植到了zsh上，若输入命令正确则显示为绿色，输入错误显示红色<br><a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank" rel="noopener">GitHub:Zsh-Syntax-Hightlighting</a></p>
-<h2 id="AutoSuggestions"><a href="#AutoSuggestions" class="headerlink" title="AutoSuggestions"></a>AutoSuggestions</h2><p>根据之前的命令输入自动提示命令<br><a href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="noopener">GitHub:AutoSuggestions</a></p>
-<h2 id="vi-mode"><a href="#vi-mode" class="headerlink" title="vi-mode"></a>vi-mode</h2><p>用vi模式使用命令行，在oh-my-zsh中收录  </p>
-<h2 id="Nyancat"><a href="#Nyancat" class="headerlink" title="Nyancat"></a>Nyancat</h2><p>彩虹猫彩蛋,在oh-my-zsh中收录<br><a href="https://github.com/klange/nyancat" target="_blank" rel="noopener">GitHub:Nyancat</a></p>
-<h2 id="cMatrix"><a href="#cMatrix" class="headerlink" title="cMatrix"></a>cMatrix</h2><p>模仿黑客帝国的字符下坠彩蛋<br><a href="https://github.com/abishekvashok/cmatrix" target="_blank" rel="noopener">GitHub:cMatrix</a></p>
-<h1 id="Command-Lines"><a href="#Command-Lines" class="headerlink" title="Command Lines"></a>Command Lines</h1><h2 id="Git-Download"><a href="#Git-Download" class="headerlink" title="Git Download"></a>Git Download</h2><p>用于下载git中的单个文件。<br><a href="https://github.com/hua1995116/git-down-repo" target="_blank" rel="noopener">GitHub:git-dwon-repo</a>  </p>
-<h2 id="pbcopy-and-pbpaste"><a href="#pbcopy-and-pbpaste" class="headerlink" title="pbcopy and pbpaste"></a>pbcopy and pbpaste</h2><p>命令行中使用系统剪切板，常见的用法有<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pwd</span> | pbcopy <span class="comment"># 将当前路径复制到剪切板中  </span></span><br><span class="line">pbcopy &lt;&lt; b.txt <span class="comment"># 将b.txt中的内容复制到剪切板中  </span></span><br><span class="line">pbpaste &gt;&gt; a.txt <span class="comment"># 将剪切板中内容复制到a.txt中</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="vim中与系统剪切版交互"><a href="#vim中与系统剪切版交互" class="headerlink" title="vim中与系统剪切版交互"></a>vim中与系统剪切版交互</h2><p>将vim中文字复制到系统剪切板需要使用v模式，然后按三个按键：<br>“ + y<br>同理，将系统剪切板复制到vim中：<br>“ + p</p>
-<h2 id="grep-nr"><a href="#grep-nr" class="headerlink" title="grep -nr"></a>grep -nr</h2><p>在某个文件下搜索所有文字内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep <span class="string">"will_he"</span> /etc -nr <span class="comment">#在/etc文件夹下遍历所有文件查找will_he</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="mdfind"><a href="#mdfind" class="headerlink" title="mdfind"></a>mdfind</h2><p>osx中类似于spotlight的搜索命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">mdfind -onlyin ~/Downloads/ essay  </span><br><span class="line">```  </span><br><span class="line">其中 onlyin用于限制搜索的范围  </span><br><span class="line"><span class="comment">## screencapture  </span></span><br><span class="line">使用命令行截屏  </span><br><span class="line">```bash</span><br><span class="line">screencapture -C -M image.png <span class="comment"># 抓去光标所在全屏幕，并插入到新邮件的附件中  </span></span><br><span class="line">screencapture -c -W <span class="comment"># 用鼠标选取窗口并复制到剪切板  </span></span><br><span class="line">screencapture -T 10 -P image.png  <span class="comment">#抓去10s之后的屏幕，并在预览中打开  </span></span><br><span class="line">screencapture -s -t pdf image.pdf <span class="comment">#用鼠标截取用一个区域，存为pdf</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="launchctl"><a href="#launchctl" class="headerlink" title="launchctl"></a>launchctl</h2><p>控制脚本启动<br>launchctl list显示当前启动列表  </p>
-<h2 id="say"><a href="#say" class="headerlink" title="say"></a>say</h2><p>say hello 读出hello，可以用于在脚本中发出提示音，也可以尝试ssh远程控制电脑发声<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">say -f hello.txt -o hello.aiff <span class="comment">#将文件读出来，并存放在音频文件中</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h1><h2 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h2><h3 id="OSX"><a href="#OSX" class="headerlink" title="OSX"></a>OSX</h3><ul>
-<li>Downie 3<br>复制网址，嗅探资源，同时具备资源检索能力  </li>
-<li>Folx<br>资源下载加速  </li>
-<li>迅雷<br>配合电影天堂之类网站可以找到丰富的资源  <h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3></li>
-<li>IDM<br>开启多线程下载  </li>
-<li>PanDownload<br>百度云盘下载不限速  </li>
-<li>uTorrent<br>蝴蝶，珞樱，北邮人bt等PT站的下载工具  </li>
-</ul>
-<h2 id="OSX-1"><a href="#OSX-1" class="headerlink" title="OSX"></a>OSX</h2><h3 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h3><p>非常好用的终端神器  </p>
-<h3 id="Dr-Cleaner-Pro"><a href="#Dr-Cleaner-Pro" class="headerlink" title="Dr.Cleaner Pro"></a>Dr.Cleaner Pro</h3><p>系统清理工具，若要用到app管理功能需要手动找破解版  </p>
-<h2 id="Windows-PC"><a href="#Windows-PC" class="headerlink" title="Windows PC"></a>Windows PC</h2><h3 id="Everything"><a href="#Everything" class="headerlink" title="Everything"></a>Everything</h3><p>Windows平台上轻量，快速查找文件的利器  </p>
-<h3 id="XX-Net"><a href="#XX-Net" class="headerlink" title="XX-Net"></a>XX-Net</h3><p>免费的VPN  </p>
-<h2 id="Android-Phone"><a href="#Android-Phone" class="headerlink" title="Android Phone"></a>Android Phone</h2><h3 id="Termux"><a href="#Termux" class="headerlink" title="Termux"></a>Termux</h3><p>安卓端Shell，打开了手机的新世界,可玩性非常之高<br>具体可以参考<br><a href="https://www.sqlsec.com/2018/05/termux.html" target="_blank" rel="noopener">Termux使用技巧</a><br>目前用到的内容主要有.</p>
-<ul>
-<li><p>安装oh-my-zsh  </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)</span>"</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用SSH控制电脑  </p>
-</li>
-<li>在电脑上SSH到手机上  </li>
-<li>换成清华的源  </li>
-<li>termux文件夹下创建系统文件夹软链接，实现与系统文件的交互<br>关于Termux相关内容可以另起一个新文章描述  <h3 id="Xposed"><a href="#Xposed" class="headerlink" title="Xposed"></a>Xposed</h3>又一安卓神器，在此框架下可以实现支付宝偷能量，微信修改运动步数等操作，需要手机ROOT  <h3 id="GitMe"><a href="#GitMe" class="headerlink" title="GitMe"></a>GitMe</h3>在手机上的GitHub第三方客户端  <h3 id="Google-Platform"><a href="#Google-Platform" class="headerlink" title="Google Platform"></a>Google Platform</h3>谷歌框架，安装后可以通过GooglePlay安装，管理一些国内应用市场上没有的应用。<br>例如Termux之类的。同时Google的语音助手在英文上也很强大  <h3 id="VPN"><a href="#VPN" class="headerlink" title="VPN"></a>VPN</h3>目前使用的是Cisco AnyConnect,之前使用过SS，另外Lantern也有安卓版本，没有试过是否好用  </li>
-</ul>
-<h1 id="Tricks"><a href="#Tricks" class="headerlink" title="Tricks"></a>Tricks</h1><h2 id="count-char-in-vim"><a href="#count-char-in-vim" class="headerlink" title="count char in vim"></a>count char in vim</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:%s/./&amp;/g  <span class="comment">#含义是所有的字符用自身替换</span></span><br></pre></td></tr></table></figure>
-<p>跳出vim还有另外一种计算文件字符数量，行数，单词数量的方法 wc<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat foobar.txt | wc -c</span><br></pre></td></tr></table></figure></p>
-<h2 id="jump-to-pair"><a href="#jump-to-pair" class="headerlink" title="jump to pair"></a>jump to pair</h2><p>快速跳转至括号的另一半 %  </p>
-<h2 id="VIM-中快速缩进"><a href="#VIM-中快速缩进" class="headerlink" title="VIM 中快速缩进"></a>VIM 中快速缩进</h2><p>在normal模式中使用>> 和 两个小于号 快速缩进，在virtual模式中，使用单个大于号小于号 快速缩进<br>另外vim中还可以用等于号快速格式化  </p>
-<h2 id="VIM中重复操作"><a href="#VIM中重复操作" class="headerlink" title="VIM中重复操作"></a>VIM中重复操作</h2><table>
-<thead>
-<tr>
-<th>重复类型</th>
-<th>重复操作符</th>
-<th>回退操作符</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>文本改变重复</td>
-<td>.</td>
-<td>u</td>
-</tr>
-<tr>
-<td>行内查找重复</td>
-<td>,</td>
-<td>;</td>
-</tr>
-<tr>
-<td>全文查找重复</td>
-<td>n</td>
-<td>N</td>
-</tr>
-<tr>
-<td>文本替换重复</td>
-<td>&amp;</td>
-<td>u</td>
-</tr>
-<tr>
-<td>宏重复</td>
-<td>@[寄存器]</td>
-<td>u</td>
-</tr>
-</tbody>
-</table>
-<h2 id="正则表达式中变量的使用"><a href="#正则表达式中变量的使用" class="headerlink" title="正则表达式中变量的使用"></a>正则表达式中变量的使用</h2><p>查找部分(和)中间放变量名，在替换部分用\1 \2 \3替代。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:%s/&lt;C-\(.\)&gt;/Ctrl + \1/gci <span class="comment">#将类似于&lt;C-e&gt;替换成Ctrl + e</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="Markdown中箭头使用方法"><a href="#Markdown中箭头使用方法" class="headerlink" title="Markdown中箭头使用方法"></a>Markdown中箭头使用方法</h2><p>注：需要去除右边符号中的空格<br>| 箭头效果 | 对应markdown符号|<br>| —— | —— |<br>| &uarr; | &amp; uarr;|<br>| &darr; | &amp; darr;|<br>| &larr; | &amp; larr;|<br>| &rarr; | &amp; rarr;|<br>| &harr; | &amp; harr;|<br>| &varr; | &amp; varr;|<br>| &lArr; | &amp; lArr;|<br>| &rArr; | &amp; rArr;|  </p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/22/Daily190422/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Will He">
-      <meta itemprop="description" content="Share something that I discovered.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will He">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/22/Daily190422/" class="post-title-link" itemprop="url">Daily190422</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-22 16:34:16" itemprop="dateCreated datePublished" datetime="2019-04-22T16:34:16+08:00">2019-04-22</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-23 11:09:02" itemprop="dateModified" datetime="2019-04-23T11:09:02+08:00">2019-04-23</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Technology"><a href="#Technology" class="headerlink" title="Technology"></a>Technology</h1><h2 id="extern-“C”"><a href="#extern-“C”" class="headerlink" title="extern “C”"></a>extern “C”</h2><p>如果在Cpp文件中需要调用C的代码，一般会出现一下的代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> _cplusplus</span></span><br><span class="line">    <span class="keyword">extern</span> <span class="string">"C"</span>&#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"><span class="comment">// normal code</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> def _cplusplus</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure></p>
-<p>首先_cplusplus是所有cpp文件都会内部定义的一个宏，表明当前文件是以cpp的方式进行编译的。<br>而cpp与c文件在编译的过程中对函数名的解析是不同的，例如：foo（int，int）在cpp中会被编译成foo_int_int<br>而在c中只是foo，也是因为这个特性，所cpp支持函数名的冲载。加了extern”C”则表示按照cpp的方式进行编译。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/21/Daily190421/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Will He">
-      <meta itemprop="description" content="Share something that I discovered.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will He">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/21/Daily190421/" class="post-title-link" itemprop="url">Daily190421</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-21 18:53:34" itemprop="dateCreated datePublished" datetime="2019-04-21T18:53:34+08:00">2019-04-21</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-23 11:08:52" itemprop="dateModified" datetime="2019-04-23T11:08:52+08:00">2019-04-23</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Technology"><a href="#Technology" class="headerlink" title="Technology"></a>Technology</h1><h2 id="Bash-Script"><a href="#Bash-Script" class="headerlink" title="Bash Script"></a>Bash Script</h2><h3 id="seg"><a href="#seg" class="headerlink" title="seg"></a>seg</h3><p>用于通过脚本对文件进行操作，并输出。<br>这个命令的一般格式是 seg 【用于改变文件的脚本】【文件名】<br>eg: seg ‘2,$d’ a.txt  </p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/19/Daily190419/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Will He">
-      <meta itemprop="description" content="Share something that I discovered.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will He">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/19/Daily190419/" class="post-title-link" itemprop="url">Daily190419</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-19 17:25:08" itemprop="dateCreated datePublished" datetime="2019-04-19T17:25:08+08:00">2019-04-19</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-23 11:08:24" itemprop="dateModified" datetime="2019-04-23T11:08:24+08:00">2019-04-23</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Technology"><a href="#Technology" class="headerlink" title="Technology"></a>Technology</h1><h2 id="Bash-Shell-Script"><a href="#Bash-Shell-Script" class="headerlink" title="Bash Shell Script"></a>Bash Shell Script</h2><p>在shell脚本中，或运算符符号|表示管道，即上一条命令的结果作为下一条命令的输入<br>常见的应用有：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">adb <span class="built_in">log</span> | grep <span class="string">"tag"</span>  </span><br><span class="line">YES | cp -rf hello.txt</span><br></pre></td></tr></table></figure></p>
-<h2 id="java-中反射的用法"><a href="#java-中反射的用法" class="headerlink" title="java 中反射的用法"></a>java 中反射的用法</h2><p>反射在java中表示用method.invoke(clazz, args…)的类中方法的调用方式<br>invoke使用的步骤：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Class cls = Class.forName(<span class="string">"com.test.Student"</span>)  </span><br><span class="line">Method m = cls.getDeclaredmethod(<span class="string">"methodName"</span>, int.class, String.class)  </span><br><span class="line">m.invoke(cls.newInstance(), 20, <span class="string">"hahah"</span>)</span><br></pre></td></tr></table></figure></p>
-<p>反射的主要好处是，可以动态加载类，不需在开始的时候import，因此带来了很大的灵活性<br>比如，如果不知道使用的数据库是sql还是oracle，可以在config文件中输入具体是哪个库，调用时决定clazz = Class.forName(com.java.xxx)  </p>
-<h2 id="shell中反引号的用法"><a href="#shell中反引号的用法" class="headerlink" title="shell中反引号的用法"></a>shell中反引号的用法</h2><p>在md语法中，连续三个反引号可以插入一段引用文字或者代码，在shell中反引号所括起来的内容表示执行此内部的脚本。<br>比较典型的应用是，判断是哪个平台if[[ <code>uname</code> = ‘Darwin’]]会在if语句中执行uname这个语句</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/Daily190418/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Will He">
-      <meta itemprop="description" content="Share something that I discovered.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will He">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/18/Daily190418/" class="post-title-link" itemprop="url">Daily190418</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-18 22:34:03" itemprop="dateCreated datePublished" datetime="2019-04-18T22:34:03+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-10-31 11:09:40" itemprop="dateModified" datetime="2019-10-31T11:09:40+08:00">2019-10-31</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Technology"><a href="#Technology" class="headerlink" title="Technology"></a>Technology</h1><h2 id="软链接-硬链接"><a href="#软链接-硬链接" class="headerlink" title="软链接 硬链接"></a>软链接 硬链接</h2><p>Linux中软链接与硬链接的不同：Linux一切皆是文件，文件有userdata和metadata两个部分，metadata中有inode信息，是文件在系统中的唯一标识符，文件名只是用于记忆的。Linux中软链接是一种特殊的文件，其user data类似于指针，指向目标文件，而硬链接的inode及data与原文件相同，实际测试，若删除原文件，则软链接文件失效，而硬链接文件依然有效。对于这个过程的理解是，硬链接若数量不为1，删除时并不会删除inode和data本身，只是删除了路径信息，而软链接data中存储的就是原文件的路径信息，于是软链接失效了，而硬链接因为inode和data还在所以依然存在。<br>文件夹中. 和..文件都是硬链接，如果将这两个硬链接改为其他路径，则可能出现路径循环，所以系统不允许对文件夹建立硬链接。  </p>
-<h2 id="Bash-YES"><a href="#Bash-YES" class="headerlink" title="Bash YES"></a>Bash YES</h2><p>在bash中执行YES会不断返回Y，在shell script加到一个命令之前，比如cp -rf之类，这样可以在cp命令提示是否覆盖之前文件之时自动选择y  </p>
-<h2 id="Bash"><a href="#Bash" class="headerlink" title="Bash $"></a>Bash $</h2><ul>
-<li>$0 运行程序本身  </li>
-<li>$# 参数数量  </li>
-<li>$@ 所有参数  </li>
-<li>$* 所有参数，合并为同一个字符串  </li>
-<li>$$ PID</li>
-<li>$? 上一个命令行的返回码  </li>
-<li>shift 将$1的参数向后移  </li>
-</ul>
-<h1 id="Skill"><a href="#Skill" class="headerlink" title="Skill"></a>Skill</h1><p>我目前存在一个很严重的耽误效率的习惯是，总是习惯于充分了解一样东西在去上手。<br>实际上，马上上手去实操会把整个学习，探索的流程缩短。<br>所以理想的情况是，了解它的基本概念，运行原理。细节全部抛弃，马上进入实操阶段。  </p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/03/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Will He">
-      <meta itemprop="description" content="Share something that I discovered.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will He">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/03/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-03-03 13:12:07" itemprop="dateCreated datePublished" datetime="2019-03-03T13:12:07+08:00">2019-03-03</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -2321,8 +757,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -2451,6 +896,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基础命令"><span class="nav-number">1.</span> <span class="nav-text">一、基础命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-文件及目录操作"><span class="nav-number">1.1.</span> <span class="nav-text">1. 文件及目录操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#cd"><span class="nav-number">1.1.1.</span> <span class="nav-text">cd</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pushd-popd-dirs"><span class="nav-number">1.1.2.</span> <span class="nav-text">pushd/popd/dirs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ls"><span class="nav-number">1.1.3.</span> <span class="nav-text">ls</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pwd"><span class="nav-number">1.1.4.</span> <span class="nav-text">pwd</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cp"><span class="nav-number">1.1.5.</span> <span class="nav-text">cp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mv"><span class="nav-number">1.1.6.</span> <span class="nav-text">mv</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ln"><span class="nav-number">1.1.7.</span> <span class="nav-text">ln</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mkdir"><span class="nav-number">1.1.8.</span> <span class="nav-text">mkdir</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#touch"><span class="nav-number">1.1.9.</span> <span class="nav-text">touch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rm"><span class="nav-number">1.1.10.</span> <span class="nav-text">rm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#file"><span class="nav-number">1.1.11.</span> <span class="nav-text">file</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#stat"><span class="nav-number">1.1.12.</span> <span class="nav-text">stat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#md5sum"><span class="nav-number">1.1.13.</span> <span class="nav-text">md5sum</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chmod"><span class="nav-number">1.1.14.</span> <span class="nav-text">chmod</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chgrp-chown"><span class="nav-number">1.1.15.</span> <span class="nav-text">chgrp/chown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tar"><span class="nav-number">1.1.16.</span> <span class="nav-text">tar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#zip-unzip"><span class="nav-number">1.1.17.</span> <span class="nav-text">zip/unzip</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#diff"><span class="nav-number">1.1.18.</span> <span class="nav-text">diff</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cmp"><span class="nav-number">1.1.19.</span> <span class="nav-text">cmp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-输入及输出操作"><span class="nav-number">1.2.</span> <span class="nav-text">2. 输入及输出操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#echo"><span class="nav-number">1.2.1.</span> <span class="nav-text">echo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#printf"><span class="nav-number">1.2.2.</span> <span class="nav-text">printf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#read"><span class="nav-number">1.2.3.</span> <span class="nav-text">read</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#head-tail"><span class="nav-number">1.2.4.</span> <span class="nav-text">head/tail</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cat"><span class="nav-number">1.2.5.</span> <span class="nav-text">cat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dirname-basename"><span class="nav-number">1.2.6.</span> <span class="nav-text">dirname/basename</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cut"><span class="nav-number">1.2.7.</span> <span class="nav-text">cut</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#paste"><span class="nav-number">1.2.8.</span> <span class="nav-text">paste</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sort"><span class="nav-number">1.2.9.</span> <span class="nav-text">sort</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#uniq"><span class="nav-number">1.2.10.</span> <span class="nav-text">uniq</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tr"><span class="nav-number">1.2.11.</span> <span class="nav-text">tr</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#wc"><span class="nav-number">1.2.12.</span> <span class="nav-text">wc</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yes"><span class="nav-number">1.2.13.</span> <span class="nav-text">yes</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-进程及系统信息管理"><span class="nav-number">1.3.</span> <span class="nav-text">3. 进程及系统信息管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ps"><span class="nav-number">1.3.1.</span> <span class="nav-text">ps</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#top"><span class="nav-number">1.3.2.</span> <span class="nav-text">top</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#kill-pkill-killall"><span class="nav-number">1.3.3.</span> <span class="nav-text">kill/pkill/killall</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#free"><span class="nav-number">1.3.4.</span> <span class="nav-text">free</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#time"><span class="nav-number">1.3.5.</span> <span class="nav-text">time</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#date"><span class="nav-number">1.3.6.</span> <span class="nav-text">date</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#history"><span class="nav-number">1.3.7.</span> <span class="nav-text">history</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ping"><span class="nav-number">1.3.8.</span> <span class="nav-text">ping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ip"><span class="nav-number">1.3.9.</span> <span class="nav-text">ip</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#which-whereis"><span class="nav-number">1.3.10.</span> <span class="nav-text">which/whereis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#id"><span class="nav-number">1.3.11.</span> <span class="nav-text">id</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#uname"><span class="nav-number">1.3.12.</span> <span class="nav-text">uname</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#who-whoami"><span class="nav-number">1.3.13.</span> <span class="nav-text">who/whoami</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#exit"><span class="nav-number">1.3.14.</span> <span class="nav-text">exit</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shutdown-poweroff-reboot-halt"><span class="nav-number">1.3.15.</span> <span class="nav-text">shutdown/poweroff/reboot/halt</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sleep"><span class="nav-number">1.3.16.</span> <span class="nav-text">sleep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#df"><span class="nav-number">1.3.17.</span> <span class="nav-text">df</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#du"><span class="nav-number">1.3.18.</span> <span class="nav-text">du</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#export-set"><span class="nav-number">1.3.19.</span> <span class="nav-text">export/set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#source"><span class="nav-number">1.3.20.</span> <span class="nav-text">source</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -2578,6 +1040,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -2588,6 +1054,8 @@
   
   
 
+
+  
 
 
   
