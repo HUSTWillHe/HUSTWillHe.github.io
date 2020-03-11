@@ -96,25 +96,25 @@
 
 
 
-  <meta name="description" content="Briefvim解决了长时间文本输入环境下不断需要切换键盘鼠标的问题，让人们更专注于对输入内容的思考。但是上世纪九十年代的框架维护已经非常费力。于是一个巴西的大佬fork出了neovim。本文将介绍作者在neovim上的探索。">
-<meta name="keywords" content="neovim,vim">
+  <meta name="description" content="Method One: 利用shell中变量的字符串替换原理：${parameter//pattern/string}这个操作可以将parameter中的pattern替换成string示例:1234567original=just_do_it.cpporiginal=$&amp;#123;original%.cpp&amp;#125; # get rid of suffixsplit=$&amp;#123;origin">
+<meta name="keywords" content="ShellScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="neo vim preference">
-<meta property="og:url" content="http://yoursite.com/2019/10/31/neo-vim-preference/index.html">
+<meta property="og:title" content="Split String with Shell Script">
+<meta property="og:url" content="http://yoursite.com/2020/03/11/Split-String-with-Shell-Script/index.html">
 <meta property="og:site_name" content="Will He">
-<meta property="og:description" content="Briefvim解决了长时间文本输入环境下不断需要切换键盘鼠标的问题，让人们更专注于对输入内容的思考。但是上世纪九十年代的框架维护已经非常费力。于是一个巴西的大佬fork出了neovim。本文将介绍作者在neovim上的探索。">
+<meta property="og:description" content="Method One: 利用shell中变量的字符串替换原理：${parameter//pattern/string}这个操作可以将parameter中的pattern替换成string示例:1234567original=just_do_it.cpporiginal=$&amp;#123;original%.cpp&amp;#125; # get rid of suffixsplit=$&amp;#123;origin">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-31T03:12:28.389Z">
+<meta property="og:updated_time" content="2020-03-11T07:11:36.451Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="neo vim preference">
-<meta name="twitter:description" content="Briefvim解决了长时间文本输入环境下不断需要切换键盘鼠标的问题，让人们更专注于对输入内容的思考。但是上世纪九十年代的框架维护已经非常费力。于是一个巴西的大佬fork出了neovim。本文将介绍作者在neovim上的探索。">
+<meta name="twitter:title" content="Split String with Shell Script">
+<meta name="twitter:description" content="Method One: 利用shell中变量的字符串替换原理：${parameter//pattern/string}这个操作可以将parameter中的pattern替换成string示例:1234567original=just_do_it.cpporiginal=$&amp;#123;original%.cpp&amp;#125; # get rid of suffixsplit=$&amp;#123;origin">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/10/31/neo-vim-preference/">
+  <link rel="canonical" href="http://yoursite.com/2020/03/11/Split-String-with-Shell-Script/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>neo vim preference | Will He</title>
+  <title>Split String with Shell Script | Will He</title>
   
 
 
@@ -310,7 +310,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/31/neo-vim-preference/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/11/Split-String-with-Shell-Script/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Will He">
@@ -327,7 +327,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">neo vim preference
+          <h1 class="post-title" itemprop="name headline">Split String with Shell Script
 
               
             
@@ -353,7 +353,7 @@
                 
               
 
-              <time title="创建时间：2019-10-31 11:06:15 / 修改时间：11:12:28" itemprop="dateCreated datePublished" datetime="2019-10-31T11:06:15+08:00">2019-10-31</time>
+              <time title="创建时间：2020-03-11 11:47:05 / 修改时间：15:11:36" itemprop="dateCreated datePublished" datetime="2020-03-11T11:47:05+08:00">2020-03-11</time>
             
 
             
@@ -392,7 +392,11 @@
       
 
       
-        <h1 id="Brief"><a href="#Brief" class="headerlink" title="Brief"></a>Brief</h1><p>vim解决了长时间文本输入环境下不断需要切换键盘鼠标的问题，让人们更专注于对输入内容的思考。但是上世纪九十年代的框架维护已经非常费力。于是一个巴西的大佬fork出了neovim。本文将介绍作者在neovim上的探索。</p>
+        <h1 id="Method-One-利用shell中变量的字符串替换"><a href="#Method-One-利用shell中变量的字符串替换" class="headerlink" title="Method One: 利用shell中变量的字符串替换"></a>Method One: 利用shell中变量的字符串替换</h1><p><strong>原理：</strong><br><strong>${parameter//pattern/string}</strong><br>这个操作可以将parameter中的pattern替换成string<br><strong>示例:</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">original=just_do_it.cpp</span><br><span class="line">original=<span class="variable">$&#123;original%.cpp&#125;</span> <span class="comment"># get rid of suffix</span></span><br><span class="line">split=<span class="variable">$&#123;original//_/ &#125;</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="variable">$&#123;split[@]&#125;</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="variable">$&#123;i&#125;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>补充：</strong><br>回顾一下\${}字符串处理的其他用法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$&#123;#string&#125;</span> <span class="comment">#计算长度  </span></span><br><span class="line"><span class="variable">$&#123;string:position&#125;</span> <span class="comment">#从position位置开始提取字符串  </span></span><br><span class="line"><span class="variable">$&#123;string:position:length&#125;</span> <span class="comment">#从position位置开始提取长度为length的字符串</span></span><br><span class="line"><span class="variable">$&#123;string#substring&#125;</span> <span class="comment">#从左到右切除符合substring的最小子串，substring可以为正则表达式</span></span><br><span class="line"><span class="variable">$&#123;string##substring&#125;</span> <span class="comment">#从左到右切除符合substring的最大子串</span></span><br><span class="line"><span class="variable">$&#123;string%substring&#125;</span> <span class="comment">#从右到左切除符合substring的最小子串</span></span><br><span class="line"><span class="variable">$&#123;string%%substring&#125;</span> <span class="comment">#从右到左切除符合substring的最大子串</span></span><br><span class="line"><span class="variable">$&#123;string/pattern/string&#125;</span> <span class="comment">#替换第一个匹配的pattern</span></span><br><span class="line"><span class="variable">$&#123;string/#pattern/string&#125;</span> <span class="comment">#从左到右替换第一个匹配的pattern</span></span><br><span class="line"><span class="variable">$&#123;string/%pattern/string&#125;</span> <span class="comment">#从右到左替换第一个匹配的pattern</span></span><br><span class="line"><span class="variable">$&#123;string//pattern/string&#125;</span> <span class="comment">#替换所有匹配的pattern</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="Method-Two-通过IFS变量设置分隔符"><a href="#Method-Two-通过IFS变量设置分隔符" class="headerlink" title="Method Two: 通过IFS变量设置分隔符"></a>Method Two: 通过IFS变量设置分隔符</h1><p>Shell脚本中有个变量叫IFS（Internal Field Seprator，内部域分隔符）<br>Shell的环境变量分为set和env两种，set变量可以通过export倒入到env变量中。set是显示设置的shell变量，仅在本shell中有效，env变量的作用域要大一些，是用户变量，用户变量在不同的shell中都是一样的。IFS是一种set变量，当shell处理“命令替换”和参数替换时，shell根据IFS的值，默认是space，tab，newline来拆解读入的变量，然后对特殊字符进行处理，最后重新组合赋值给该变量。(如果变量的外面有双引号的话，则不会将space tab newline当作分隔符)<br><strong>示例：</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">a=he_li_wei_long_wei.cpp</span><br><span class="line">OLD_IFS=<span class="variable">$&#123;IFS&#125;</span></span><br><span class="line">IFS=<span class="string">"_"</span></span><br><span class="line">array=(<span class="variable">$a</span>)</span><br><span class="line">IFS=<span class="variable">$OLD_IFS</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="variable">$&#123;array[@]&#125;</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">        <span class="built_in">echo</span> <span class="variable">$i</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>补充：</strong><br>set变量，env变量及export的使用实例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ a=b <span class="comment">#设置shell变量  </span></span><br><span class="line">$ <span class="built_in">echo</span> <span class="variable">$a</span></span><br><span class="line">b</span><br><span class="line">env | grep a <span class="comment"># 用户变量中并没有a</span></span><br><span class="line"><span class="built_in">set</span> | grep a <span class="comment"># shell变量中有a</span></span><br><span class="line">a=b</span><br><span class="line"><span class="built_in">export</span> | grep a <span class="comment"># 导出变量中也没有</span></span><br><span class="line"><span class="built_in">export</span> a</span><br><span class="line">env | grep a <span class="comment"># 使用export导出之后用户变量存在了</span></span><br><span class="line">a=b</span><br></pre></td></tr></table></figure></p>
+<h1 id="Method-Three-使用tr命令实现字符替换"><a href="#Method-Three-使用tr命令实现字符替换" class="headerlink" title="Method Three: 使用tr命令实现字符替换"></a>Method Three: 使用tr命令实现字符替换</h1><p>这个方法与第一种方法类似，作用是将原分隔符替换成系统默认的IFS分隔符中的空格。<br><strong>使用示例：</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">a=he_li_wei_long_wei.cpp</span><br><span class="line">a=<span class="variable">$&#123;a%.cpp&#125;</span></span><br><span class="line">arr=`<span class="built_in">echo</span> <span class="variable">$a</span> | tr <span class="string">'_'</span> <span class="string">' '</span>`</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="variable">$&#123;arr[@]&#125;</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">        <span class="built_in">echo</span> <span class="variable">$i</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -416,9 +420,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/neovim/" rel="tag"># neovim</a>
-          
-            <a href="/tags/vim/" rel="tag"># vim</a>
+            <a href="/tags/ShellScript/" rel="tag"># ShellScript</a>
           
         </div>
       
@@ -431,8 +433,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/07/Use-SNPE-to-Invoke-DSP-on-Qualcomm-Platform/" rel="next" title="Use SNPE to Invoke DSP on Qualcomm Platform">
-                <i class="fa fa-chevron-left"></i> Use SNPE to Invoke DSP on Qualcomm Platform
+              <a href="/2020/02/20/Linux-Extend-Command/" rel="next" title="Linux Extend Command">
+                <i class="fa fa-chevron-left"></i> Linux Extend Command
               </a>
             
           </div>
@@ -440,10 +442,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/20/Linux-Basic-Command/" rel="prev" title="Linux Basic Command">
-                Linux Basic Command <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -636,7 +634,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Brief"><span class="nav-number">1.</span> <span class="nav-text">Brief</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Method-One-利用shell中变量的字符串替换"><span class="nav-number">1.</span> <span class="nav-text">Method One: 利用shell中变量的字符串替换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Method-Two-通过IFS变量设置分隔符"><span class="nav-number">2.</span> <span class="nav-text">Method Two: 通过IFS变量设置分隔符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Method-Three-使用tr命令实现字符替换"><span class="nav-number">3.</span> <span class="nav-text">Method Three: 使用tr命令实现字符替换</span></a></li></ol></div>
             
 
           </div>

@@ -309,6 +309,164 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/19/Daily190419/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Will He">
+      <meta itemprop="description" content="Share something that I discovered.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will He">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/19/Daily190419/" class="post-title-link" itemprop="url">Daily190419</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-19 17:25:08" itemprop="dateCreated datePublished" datetime="2019-04-19T17:25:08+08:00">2019-04-19</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-23 11:08:24" itemprop="dateModified" datetime="2019-04-23T11:08:24+08:00">2019-04-23</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Technology"><a href="#Technology" class="headerlink" title="Technology"></a>Technology</h1><h2 id="Bash-Shell-Script"><a href="#Bash-Shell-Script" class="headerlink" title="Bash Shell Script"></a>Bash Shell Script</h2><p>在shell脚本中，或运算符符号|表示管道，即上一条命令的结果作为下一条命令的输入<br>常见的应用有：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">adb <span class="built_in">log</span> | grep <span class="string">"tag"</span>  </span><br><span class="line">YES | cp -rf hello.txt</span><br></pre></td></tr></table></figure></p>
+<h2 id="java-中反射的用法"><a href="#java-中反射的用法" class="headerlink" title="java 中反射的用法"></a>java 中反射的用法</h2><p>反射在java中表示用method.invoke(clazz, args…)的类中方法的调用方式<br>invoke使用的步骤：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Class cls = Class.forName(<span class="string">"com.test.Student"</span>)  </span><br><span class="line">Method m = cls.getDeclaredmethod(<span class="string">"methodName"</span>, int.class, String.class)  </span><br><span class="line">m.invoke(cls.newInstance(), 20, <span class="string">"hahah"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>反射的主要好处是，可以动态加载类，不需在开始的时候import，因此带来了很大的灵活性<br>比如，如果不知道使用的数据库是sql还是oracle，可以在config文件中输入具体是哪个库，调用时决定clazz = Class.forName(com.java.xxx)  </p>
+<h2 id="shell中反引号的用法"><a href="#shell中反引号的用法" class="headerlink" title="shell中反引号的用法"></a>shell中反引号的用法</h2><p>在md语法中，连续三个反引号可以插入一段引用文字或者代码，在shell中反引号所括起来的内容表示执行此内部的脚本。<br>比较典型的应用是，判断是哪个平台if[[ <code>uname</code> = ‘Darwin’]]会在if语句中执行uname这个语句</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/Daily190418/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -653,7 +811,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
